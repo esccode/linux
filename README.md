@@ -1,3 +1,6 @@
+iptables -F (wyłańczamy wpisy)
+iptables -L (pokazuje wpisy)
+
 # keca13_linux
 Pobieramy skrypt w linuxie na pow�oce systemowej (ang. shell)
 wget --no-check-certificate http://keca13.vot.pl/algo/skrypt/sciagnij.txt
