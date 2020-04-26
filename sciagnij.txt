@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #
-wget http://keca13.vot.pl/algo/skrypt/skrypt.txt
+wget https://raw.githubusercontent.com/keca13/keca13_linux/master/skrypt.txt
 mv skrypt.txt /etc/init.d/skrypt
 chmod +x /etc/init.d/skrypt
 ln -s /etc/init.d/skrypt /etc/rc0.d/S99skrypt
