@@ -1,3 +1,14 @@
+ "uptime": "uptime | awk '{print $3,$4}'"
+ "cat": "cat /home/pi/test.txt",
+	"grep": "grep -i A /home/pi/test.txt",
+	"grep2": "grep -i A$ /home/pi/test.txt",
+	"grep3": "grep -i ^A /home/pi/test.txt",
+	"hostname": "hostname",
+	"sed -i -e '1,4s/22/999/' /home/pi/test.txt"
+
+
+=====================================
+
 Podstawowe komendy i polecenia w Linux
 I. Polecenia związane z użytkownikami, grupami, loginami i zamykaniem systemu
 o shutdown(zamykamy Linuxa)
