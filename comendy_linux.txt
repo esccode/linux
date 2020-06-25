@@ -9,6 +9,11 @@
 
 =====================================
 
+LOGI SYSTEMOWE
+
+cat /var/log/syslog
+tail -f /var/log/syslog
+
 Podstawowe komendy i polecenia w Linux
 I. Polecenia związane z użytkownikami, grupami, loginami i zamykaniem systemu
 o shutdown(zamykamy Linuxa)
