@@ -16,6 +16,16 @@ tail -f /var/log/syslog
 
 tail -f /var/log/auth.log
 
+PROCESY
+
+top
+
+
+ZALOGOWANI
+
+w
+
+
 Podstawowe komendy i polecenia w Linux
 I. Polecenia związane z użytkownikami, grupami, loginami i zamykaniem systemu
 o shutdown(zamykamy Linuxa)
