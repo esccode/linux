@@ -1,4 +1,19 @@
- "uptime": "uptime | awk '{print $3,$4}'"
+
+MONTOWNIE DYSKU
+
+df
+df -aTh
+df -Th
+
+Disk /dev/sda
+Device /dev/sda1
+#mkdir /mnt/backups
+fdisk -l
+#sudo mount /dev/sda2 /mnt/
+#sudo umount /dev/sda2
+
+========================
+"uptime": "uptime | awk '{print $3,$4}'"
  "cat": "cat /home/pi/test.txt",
 	"grep": "grep -i A /home/pi/test.txt",
 	"grep2": "grep -i A$ /home/pi/test.txt",
