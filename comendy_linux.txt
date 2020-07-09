@@ -1,4 +1,10 @@
+=============================
+#echo "Hello world" > drzewko.txt
+#echo "Hello world" >> drzewko.txt
+operator > nadpisuje cały plik tym, co zostanie przekazane. 
+Natomiast operator >> dopisuje przekazane informacje na końcu pliku!
 
+=========================
 MONTOWNIE DYSKU
 
 df
