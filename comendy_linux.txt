@@ -1,3 +1,29 @@
+=======================
+PYTHON3.8
+# https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/
+
+sudo apt update | sudo apt-get update | sudo aptitude update
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+curl -O https://www.python.org/ftp/python/3.8.2/Python-3.8.2.tar.xz
+tar -xf Python-3.8.2.tar.xz
+cd Python-3.8.2
+./configure --enable-optimizations
+nproc
+make -j 4
+sudo make altinstall #Do not use the standard make install as it will overwrite the default system python3 binary.
+python3.8 --version
+
+# we’ll create a new Python 3.8 project called my_app inside the user home directory.
+mkdir ~/my_app && cd ~/my_app
+
+# Creating a Virtual Environment
+
+python3.8 -m venv my_app_venv
+source my_app_venv/bin/activate # From inside the project root run the following command to create a virtual environment named my_app_venv:
+python -v
+deactivate
+
+=========================
 #cat /etc/network/interfaces
 or
 #cat /etc/dhcpcd.conf
