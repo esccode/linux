@@ -1,3 +1,6 @@
+#cat /etc/network/interfaces
+or
+#cat /etc/dhcpcd.conf
 =============================
 #echo "Hello world" > drzewko.txt
 #echo "Hello world" >> drzewko.txt
