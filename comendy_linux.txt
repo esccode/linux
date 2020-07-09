@@ -1,6 +1,8 @@
 #cat /etc/network/interfaces
 or
 #cat /etc/dhcpcd.conf
+or 
+# cat /etc/wpa_supplicant/wpa_supplicant.conf
 =============================
 #echo "Hello world" > drzewko.txt
 #echo "Hello world" >> drzewko.txt
