@@ -3,7 +3,7 @@
 w
 ==================================
 # kopiowanie z serwera na serwer
- scp debian-10.3.0-amd64-DVD-1.iso root@X.X.X.X:/var/lib/vz/template/iso/
+scp debian-10.3.0-amd64-DVD-1.iso root@X.X.X.X:/var/lib/vz/template/iso/
 =======================
 PYTHON3.8
 # https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/
