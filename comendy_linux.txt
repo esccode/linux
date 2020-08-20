@@ -4,6 +4,20 @@ esc # wyjscie z trybu
 
 :x # wyjscie z zapisem
 :q! # bez zapisu
+
+Podstawowe komendy:
+Wprowadzanie tekstu: a,i,A,i
+Usuwanie tekstu: x (DEL), X (BACKSPACE)
+Zapisywanie: ZZ, :w nowanazwa, :w
+Wyjscie bez zapisywania :q! Dzialanie guzikow a oraz i:
+Przesuwanie tekstu: l,k,j,h
+Wstawianie linii: o
+Kopiuj inie: yy
+Wklej: p
+Kasowanie linii: dd
+Kasowanie do konca linii: D
+Przesuwanie tekstu: $, 0, ^F, ^B, w, b,[[,]]
+Wyszukiwanie: /
 ==================================
 # Za pomocą polecenia w możemy otrzymać wiele ciekawych informacji, takich jak np. kto jest zalogowany, jakich procesów jaki użytkownik używa,
 # zawiera się tu także polecenie uptime. Użycie polecenia jest następujące. 
