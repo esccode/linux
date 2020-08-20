@@ -1,8 +1,9 @@
 vi file
-i
-esc
+i # tryb edycji
+esc # wyjscie z trybu
 
-:x
+:x # wyjscie z zapisem
+:q! # bez zapisu
 ==================================
 # Za pomocą polecenia w możemy otrzymać wiele ciekawych informacji, takich jak np. kto jest zalogowany, jakich procesów jaki użytkownik używa,
 # zawiera się tu także polecenie uptime. Użycie polecenia jest następujące. 
