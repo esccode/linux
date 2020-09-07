@@ -1,3 +1,9 @@
+
+Usuwamy białe znaki np.^M
+sed -i.bak 's/^M//g' ca.pem
+^M=press(Ctrl-V Ctrl-M)
+vi ca.pem
+--------------
 vi file
 i # tryb edycji
 esc # wyjscie z trybu
