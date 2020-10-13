@@ -1,6 +1,8 @@
 
 Usuwamy białe znaki np.^M
 sed -i.bak 's/^M//g' ca.pem
+sed -i.bak 's/,//g' contact.txt
+
 ^M=press(Ctrl-V Ctrl-M)
 vi ca.pem
 --------------
