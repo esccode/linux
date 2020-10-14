@@ -1,6 +1,8 @@
 man iptables (pokazuje dokumentacje dla dowolnego polecenia)
-iptables -F (wyłańczamy wpisy)
-iptables -L (pokazuje wpisy)
+
+#iptables -F (wyłańczamy wpisy)
+
+#iptables -L (pokazuje wpisy)
 
 # keca13_linux
 Pobieramy skrypt w linuxie na pow�oce systemowej (ang. shell)
