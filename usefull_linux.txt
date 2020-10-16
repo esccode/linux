@@ -1,9 +1,17 @@
+man awk
+#$2 druga kolumna #',' seoarator kolumny
+awk -F ',' '{print $2}' plik.txt
+-----------------------
+man cat
 cat plik.txt | grep 'szukany text'
 grep '^napoczatkuwiersza' plik.txt
 grep 'nakoncu wiersza$' plik.txt
 history | grep iptables
 ----------------------
+man sed
 Usuwamy białe znaki np.^M
+
+#-i bak    tworzy plik o takiej samej nazwie z rozszeżeniem ca.pem.bak
 sed -i.bak 's/^M//g' ca.pem
 sed -i.bak 's/,//g' contact.txt
 
