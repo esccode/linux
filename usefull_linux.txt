@@ -1,5 +1,6 @@
 cat plik.txt | grep 'szukany text'
-grep 'szukany text' plik.txt
+grep '^napoczatkuwiersza' plik.txt
+grep 'nakoncu wiersza$' plik.txt
 history | grep iptables
 ----------------------
 Usuwamy białe znaki np.^M
