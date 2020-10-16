@@ -1,4 +1,7 @@
-
+cat plik.txt | grep 'szukany text'
+grep 'szukany text' plik.txt
+history | grep iptables
+----------------------
 Usuwamy białe znaki np.^M
 sed -i.bak 's/^M//g' ca.pem
 sed -i.bak 's/,//g' contact.txt
