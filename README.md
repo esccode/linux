@@ -27,3 +27,4 @@ iptables -F
 
 właczamy wpisy IPTABLES na:#
 /etc/init.d/skrypt
+echo text dopisywany >> plik.txt
