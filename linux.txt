@@ -581,3 +581,6 @@ tar
 |-Opis: TAR nie kompresuje nam plików, żeby były z kompresowane trzeba użyć GZIP'a
 |-Patrz także: [man]
 |_________________________________________________________________ 
+scp -P port vi-editor.rd root@192.168.X.X:/home/pi
+scp -P port root@192.168.x.x:/home/pi/plik_serwera.txt plik_lokalny.txt
+scp -P port plik_lokalny.rd root@192.168.X.X:/home/pi
