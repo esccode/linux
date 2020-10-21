@@ -11,4 +11,4 @@ $ eval $(ssh-agent -s)
 $ ssh-add ~/.ssh/id_rsa
 
 # Paste your key into the "Key" field on github setting->ssh...
-~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub > /dev/clipboard
