@@ -5,50 +5,59 @@ man iptables (pokazuje dokumentacje dla dowolnego polecenia)
 #iptables -L (pokazuje wpisy)
 
 
-Pobieramy skrypt w linuxie na pow�oce systemowej (ang. shell)
-wget --no-check-certificate http://keca13.vot.pl/algo/skrypt/sciagnij.txt
+Pobieramy skrypt w linuxie na pow�oce systemowej (ang. shell
+
+wget --no-check-certificate http://keca13.vot.pl/algo/skrypt/sciagnij.
+
 wget --no-check-certificate https://raw.githubusercontent.com/keca13/keca13_linux/master/sciagnij.txt
 
 Odpalamy skrypt
+
 sh sciagnij.txt
 
-Restartujemy system
-reboot
 
 Lokalizacja skryptu
-../etc/init.d/skrypt
 
-sprawdzamy dzia�anie skryptu np. na
+/etc/init.d/skrypt
+
+sprawdzamy dzia�anie skryptu np. n
+
 http://www.traceroute.org/
 
 wyłaczamy wpisy IPTABLES na: /etc/init.d/skrypt
-iptables -F
-
-
-właczamy wpisy IPTABLES na:#
-/etc/init.d/skrypt
-echo text dopisywany >> plik.txt
------------------------
 
 =====================
 man awk
+
 #$2 druga kolumna #',' seoarator kolumny
+
 awk -F ',' '{print $2}' plik.txt
------------------------
-man cat
+
+=======================
 cat plik.txt | grep 'szukany text'
-grep '^napoczatkuwiersza' plik.txt
+
+grep '^napoczatkuwiersza' plik.
+
 grep 'nakoncu wiersza$' plik.txt
+
 history | grep iptables
-----------------------
+
+
+===============
+
 Usuwamy białe znaki np.^M
 
 #-i bak    tworzy plik o takiej samej nazwie z rozszeżeniem ca.pem.bak
+
 sed -i.bak 's/^M//g' ca.pem
+
 sed -i.bak 's/,//g' contact.txt
 
-^M=press(Ctrl-V Ctrl-M)
+^M=press(Ctrl-V Ctrl-M
+
 vi ca.pem
+
+
 --------------
 vi file
 i # tryb edycji
