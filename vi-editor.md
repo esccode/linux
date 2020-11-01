@@ -1,3 +1,11 @@
+#CUT and copy
+move cursor to  selest 
+press d to cut or y to copy
+move to where you would to paste
+press p to paste after
+
+
+
 vi file
 i # tryb edycji
 esc # wyjscie z trybu
