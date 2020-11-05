@@ -145,11 +145,14 @@ df -Th
 Disk /dev/sda
 Device /dev/sda1
 #mkdir /mnt/backups
+
 fdisk -l
+
 #sudo mount /dev/sda2 /mnt/
 #sudo umount /dev/sda2
 
 # in this path is auto default, if after default is problem you just commant disk
+
 /etc/fstab
 
 ========================
