@@ -149,6 +149,9 @@ fdisk -l
 #sudo mount /dev/sda2 /mnt/
 #sudo umount /dev/sda2
 
+# in this path is auto default, if after default is problem you just commant disk
+/etc/fstab
+
 ========================
 "uptime": "uptime | awk '{print $3,$4}'"
  "cat": "cat /home/pi/test.txt",
@@ -176,7 +179,7 @@ top
 ZALOGOWANI
 
 w
-
+======================
 
 Podstawowe komendy i polecenia w Linux
 I. Polecenia związane z użytkownikami, grupami, loginami i zamykaniem systemu
