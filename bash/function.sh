@@ -2,21 +2,30 @@
 
 #title           : 
 #description     : Materiał z Strefy Kursów - Kurs Bash
-#author		     : Piotr "TheRealMamuth" Kośka
+#author          : Piotr "TheRealMamuth" Kośka
 #copyright       : Strefa Kursów
 #date            : 25.05.2018
 #version         : v1.0   
-#usage		     :
+#usage           :
 #notes           :
 #bash_version    : 4.4.12(1)-release
 #editor          : visual studio code
 #==============================================================================
-
 # zmienne
 liczba1=$1
 liczba2=$2
 
 #function
+
+function argu () {
+        if [ "$#" -ge 2 ]; then
+            echo ""
+            return 1
+        else
+            echo ""
+            return 0
+        fi
+}
 
 function artymetyka () {
 
@@ -33,17 +42,26 @@ function artymetyka () {
 }
 
 function main () {
-    echo -n "Co chcesz zrobic: "; read dzialanie
-    if [ "$dzialanie" = "+" ]; then
-        artymetyka $1 $2
-        dodawnie $1 $2
-    fi
+    argu $1 $2
+    RETURN_VAL=$?
 
-    if [ "$dzialanie" = "-" ]; then
-        artymetyka $1 $2
-        odejmowanie $1 $2
-    fi
+    if [ $RETURN_VAL -eq 1 ]; then
 
+        echo -n "Co chcesz zrobic: + || -: "; read dzialanie
+        if [ "$dzialanie" = "+" ]; then
+            artymetyka $1 $2
+            dodawnie $1 $2
+        fi
+
+        if [ "$dzialanie" = "-" ]; then
+            artymetyka $1 $2
+            odejmowanie $1 $2
+        fi
+        exit 0
+    else 
+        echo "Podale za malo argumentow. Powinien podac [arg1] [arg2]"
+        exit 1
+    fi
 }
 
 #sktypt
