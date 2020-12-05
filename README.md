@@ -88,8 +88,10 @@ w
 
 #Kopiowanie pliku ze zdalnej lokalizacji na lokalny dysk
 $ scp uzytkownik@serwer.pl:/scieżka/plik_serwer plik_lokalny
+
 #Kopiowanie pliku z dysku lokalnego do zdalnej lokalizacji
 $ scp plik_lokalny uzytkownik@serwer.pl:/sciezka/plik_serwer
+$ scp -r ./07/ ubuntu@192.168.188.X:/home/ubuntu/
 
 
 scp debian-10.3.0-amd64-DVD-1.iso root@X.X.X.X:/var/lib/vz/template/iso/
