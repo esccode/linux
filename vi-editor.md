@@ -1,15 +1,20 @@
 #tmux
 sudo apt-get install tmux
 
-#wchodzimy
+##wchodzimy
 tmus
 
-#podwojne okno
+##podwojne okno
 Ctrl+B
 %
-#podglad zmian w pliku
+###podglad zmian w pliku
 watch cat plik.sh
 
+#My usefull command
+esc
+:w;:wq;:q!;:e
+##szukanie brakujacych nawiasów
+Shift %
 Vim Cheat Sheet
 Globalny
 •	:help keyword - otwórz pomoc dla słowa kluczowego
