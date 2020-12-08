@@ -12,6 +12,10 @@ watch cat plik.sh
 
 #My usefull command
 esc
+
+##numerowanie wierszy
+:set number
+
 :w;:wq;:q!;:e
 ##szukanie brakujacych nawiasów
 Shift %
