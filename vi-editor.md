@@ -1,3 +1,13 @@
+#tmux
+sudo apt-get install tmux
+
+#wchodzimy
+tmus
+
+#podwojne okno
+Ctrl+B
+%
+
 Vim Cheat Sheet
 Globalny
 •	:help keyword - otwórz pomoc dla słowa kluczowego
