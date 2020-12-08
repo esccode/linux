@@ -7,6 +7,8 @@ tmus
 #podwojne okno
 Ctrl+B
 %
+#podglad zmian w pliku
+watch cat plik.sh
 
 Vim Cheat Sheet
 Globalny
