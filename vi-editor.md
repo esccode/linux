@@ -15,6 +15,7 @@ esc
 
 ##numerowanie wierszy
 :set number
+:set nonumber
 
 :w;:wq;:q!;:e
 ##szukanie brakujacych nawiasów
