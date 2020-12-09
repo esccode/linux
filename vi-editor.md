@@ -17,6 +17,10 @@ esc
 :set number
 :set nonumber
 
+/szukane_slowo
+n - przechodzimy do nastepnego slowa wyszukanego
+shift n - powracamy do poprzedniego wyszukanego slowa
+
 :w;:wq;:q!;:e
 ##szukanie brakujacych nawiasów
 Shift %
