@@ -17,7 +17,11 @@ esc
 :set mouse=a
 ##wylanczamy myszke
 :set mouse=
+## tryb visual clock
+Ctrl V
 
+## tryb replace mode
+Ctrl R
 ##numerowanie wierszy
 :set number
 :set nonumber
