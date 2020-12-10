@@ -15,6 +15,8 @@ esc
 
 ##tryb myszki / visual
 :set mouse=a
+##wylanczamy myszke
+:set mouse=
 
 ##numerowanie wierszy
 :set number
