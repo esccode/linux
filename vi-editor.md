@@ -22,6 +22,10 @@ Ctrl V
 
 ## tryb replace mode
 shift R
+
+## wciecia
+shift >> or shift <<
+
 ##numerowanie wierszy
 :set number
 :set nonumber
