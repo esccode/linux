@@ -13,6 +13,9 @@ watch cat plik.sh
 #My usefull command
 esc
 
+##tryb myszki
+:set mouse=a
+
 ##numerowanie wierszy
 :set number
 :set nonumber
