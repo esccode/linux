@@ -21,7 +21,7 @@ esc
 Ctrl V
 
 ## tryb replace mode
-Ctrl R
+shift R
 ##numerowanie wierszy
 :set number
 :set nonumber
