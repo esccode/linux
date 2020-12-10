@@ -10,8 +10,13 @@ Ctrl+B
 ###podglad zmian w pliku
 watch cat plik.sh
 
-#My usefull command
+#My usefull command VIM
 esc
+
+##aby przejsc do pierwszej lini w dokumencie
+gg
+## aby przejsci do ostatniej lini w dokumencie
+G
 
 ##tryb myszki / visual
 :set mouse=a
