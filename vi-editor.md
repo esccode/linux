@@ -24,6 +24,9 @@ esc
 n - przechodzimy do nastepnego slowa wyszukanego
 shift n - powracamy do poprzedniego wyszukanego slowa
 
+##kopiowanie i wklejanie  normal mode
+y - kopiowanie
+p - wklejanie
 
 ##usuwanie textu w trybie normal
 x
