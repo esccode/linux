@@ -24,6 +24,7 @@ shift n - powracamy do poprzedniego wyszukanego slowa
 
 ##usuwanie textu w trybie normal
 x
+3dd##kasuje 3 linie
 
 :w;:wq;:q!;:e
 ##szukanie brakujacych nawiasów
