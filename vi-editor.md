@@ -21,6 +21,10 @@ esc
 n - przechodzimy do nastepnego slowa wyszukanego
 shift n - powracamy do poprzedniego wyszukanego slowa
 
+
+##usuwanie textu w trybie normal
+x
+
 :w;:wq;:q!;:e
 ##szukanie brakujacych nawiasów
 Shift %
