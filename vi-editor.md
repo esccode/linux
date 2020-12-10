@@ -17,6 +17,8 @@ esc
 gg
 ## aby przejsci do ostatniej lini w dokumencie
 G
+## aby przejsc do 5 lini w dokumencie
+5G
 
 ##tryb myszki / visual
 :set mouse=a
