@@ -11,12 +11,18 @@ exit
 Ctrl <
 Ctrl >
 
-###podglad zmian w pliku
+##podglad zmian w pliku
 watch cat plik.sh
 ======================
 # My usefull command VIM
 ##przechodzenie do trybu normak
 esc
+
+
+##dzielenie pliku
+:split
+##przeskakiwanie
+Ctrl ww
 
 ##przechodzenie do lini ostatniej zmiany
 '.
