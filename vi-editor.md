@@ -17,6 +17,9 @@ watch cat plik.sh
 #My usefull command VIM
 esc
 
+# historia komend w vim normal mode
+:jumps
+
 ##tryb normal
 : ! command
 
