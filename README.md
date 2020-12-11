@@ -141,7 +141,9 @@ Natomiast operator >> dopisuje przekazane informacje na końcu pliku!
 MONTOWNIE DYSKU
 
 df
+
 df -aTh
+
 df -Th
 
 Disk /dev/sda
@@ -159,8 +161,9 @@ fdisk -l
 
 # in this path is auto default, if after default is problem you just commant disk
 
-/etc/fstab
+vim /etc/fstab
 
+/dev/sda2 /media/storage auto defaults 0 2
 ========================
 "uptime": "uptime | awk '{print $3,$4}'"
  "cat": "cat /home/pi/test.txt",
