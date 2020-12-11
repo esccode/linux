@@ -13,7 +13,9 @@ Ctrl >
 
 ##podglad zmian w pliku
 watch cat plik.sh
+
 ======================
+
 # My usefull command VIM
 ##przechodzenie do trybu normak
 esc
