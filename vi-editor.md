@@ -7,11 +7,18 @@ tmus
 ##podwojne okno
 Ctrl+B
 %
+exit
+Ctrl <
+Ctrl >
+
 ###podglad zmian w pliku
 watch cat plik.sh
-
+======================
 #My usefull command VIM
 esc
+
+##tryb normal
+:! command
 
 ##aby przejsc do pierwszej lini w dokumencie
 gg
@@ -52,6 +59,8 @@ x
 :w;:wq;:q!;:e
 ##szukanie brakujacych nawiasów
 Shift %
+
+=======================
 Vim Cheat Sheet
 Globalny
 •	:help keyword - otwórz pomoc dla słowa kluczowego
