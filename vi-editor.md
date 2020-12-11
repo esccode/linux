@@ -20,6 +20,13 @@ esc
 ##tryb normal
 : ! command
 
+## wstawianie wyniku ploecenia do pliku
+:r ! command
+
+##cofanie zmain w trybie normal 
+u
+
+
 ##aby przejsc do pierwszej lini w dokumencie
 gg
 ## aby przejsci do ostatniej lini w dokumencie
