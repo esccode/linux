@@ -18,7 +18,7 @@ watch cat plik.sh
 esc
 
 ##tryb normal
-:! command
+: ! command
 
 ##aby przejsc do pierwszej lini w dokumencie
 gg
