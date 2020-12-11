@@ -14,16 +14,20 @@ Ctrl >
 ###podglad zmian w pliku
 watch cat plik.sh
 ======================
-#My usefull command VIM
+# My usefull command VIM
+##przechodzenie do trybu normak
 esc
 
-# historia komend w vim normal mode
+##przechodzenie do lini ostatniej zmiany
+'.
+
+#historia komend w vim normal mode
 :jumps
 
 ##tryb normal
 : ! command
 
-## wstawianie wyniku ploecenia do pliku
+##wstawianie wyniku ploecenia do pliku
 :r ! command
 
 ##cofanie zmain w trybie normal 
