@@ -24,10 +24,10 @@ esc
 ##dzielenie pliku
 :split ./plik
 :vsplit ./plik
-
-
 ##przeskakiwanie
 Ctrl ww
+
+
 ##nowe zakladki
 :tabnew ./plik
 ##przeskakiwanie miedzy zakladkami
