@@ -115,6 +115,10 @@ cat ~/.ssh/MY_PUBLIC_KEY.pub | ssh <user>@<hostname> 'cat >> ~/.ssh/authorized_k
 # tworzenie pary kluczy dla ssh
 
 ssh-keygen
+
+# sprawdzamy czy serwer ssh jest uruchomiony
+
+ps -ef | grep ssh
 =======================
 PYTHON3.8
 # https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/
