@@ -17,15 +17,24 @@ watch cat plik.sh
 ======================
 
 # My usefull command VIM
-##przechodzenie do trybu normak
+##przechodzenie do trybu normal
 esc
 
 
 ##dzielenie pliku
-:split
-:vsplit
+:split ./plik
+:vsplit ./plik
+
+
 ##przeskakiwanie
 Ctrl ww
+##nowe zakladki
+:tabnew ./plik
+##przeskakiwanie miedzy zakladkami
+gt
+:tabnext
+:tabprev
+:tabn
 
 ##przechodzenie do lini ostatniej zmiany
 '.
