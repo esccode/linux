@@ -1,3 +1,5 @@
+# data utworzenia pliku
+stat plik
 man iptables (pokazuje dokumentacje dla dowolnego polecenia)
 
 #iptables -F (wyłańczamy wpisy)
