@@ -23,6 +23,7 @@ esc
 
 ##dzielenie pliku
 :split
+:vsplit
 ##przeskakiwanie
 Ctrl ww
 
