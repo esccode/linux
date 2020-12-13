@@ -99,7 +99,16 @@ scp debian-10.3.0-amd64-DVD-1.iso root@X.X.X.X:/var/lib/vz/template/iso/
 #Kopiowanie pliku ze zdalnej lokalizacji na lokalny dysk
 scp root@10.X.0.X:/home/sample.txt /home/sample.txt
 
+# ssh logowanie
 
+ssh ssh root@192.168.188.55 -p 2123
+ssh root@192.168.188.55
+ssh login@host "df -h; ls -la"
+cat ~/.ssh/MY_PUBLIC_KEY.pub | ssh <user>@<hostname> 'cat >> ~/.ssh/authorized_keys'
+
+# tworzenie pary kluczy dla ssh
+
+ssh-keygen
 =======================
 PYTHON3.8
 # https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/
