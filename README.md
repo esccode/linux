@@ -1,5 +1,9 @@
+#rozpakowanie z archiwizowanych plikow
+
+tar zxvf <plik>
+
 # data utworzenia pliku
-stat plik
+stat <plik>
 man iptables (pokazuje dokumentacje dla dowolnego polecenia)
 
 #iptables -F (wyłańczamy wpisy)
