@@ -93,7 +93,7 @@ w
 # kopiowanie z serwera na serwer
 
 #Kopiowanie pliku ze zdalnej lokalizacji na lokalny dysk
-$ scp uzytkownik@serwer.pl:/scieżka/plik_serwer plik_lokalny
+ uzytkownik@serwer.pl:/scieżka/plik_serwer plik_lokalny
 
 #Kopiowanie pliku z dysku lokalnego do zdalnej lokalizacji
 $ scp plik_lokalny uzytkownik@serwer.pl:/sciezka/plik_serwer
@@ -107,19 +107,44 @@ scp root@10.X.0.X:/home/sample.txt /home/sample.txt
 
 # ssh logowanie
 
-ssh ssh root@192.168.188.55 -p 2123
-ssh root@192.168.188.55
+ssh ssh root@192.168.188.x -p 2123
+ssh root@192.168.188.x
 ssh login@host "df -h; ls -la"
 cat ~/.ssh/MY_PUBLIC_KEY.pub | ssh <user>@<hostname> 'cat >> ~/.ssh/authorized_keys'
+	
+ps -ef | grep ssh
+sudo netstat -nlp | grep ssh
 
 # tworzenie pary kluczy dla ssh
 
 ssh-keygen
+scp ~/.ssh/id_rsa.pub ubuntu@192.168.188.x:~/.ssh
+
+ssh ubuntu@192.168.188.x
+cd .ssh/
+mv id_rsa.pub authorized_keys
+cd ..
+chmod 700 .ssh
+chmod 600 .ssh/authorized_keys
 
 # sprawdzamy czy serwer ssh jest uruchomiony oraz port
 
-ps -ef | grep ssh
-sudo netstat -nlp | grep ssh
+# ustawianie portu do ssh
+sudo vim /etc/ssh/sshd_config
+Port 5876
+PermitRootLogin no
+sude service ssh restart
+
+# tworzenei aliasu do logowania sie
+# w katalogu urzytkownika tworzymy
+notepad.exe ~/.ssh/config
+
+Host alias
+ HostName 192.168.x.x
+ User admin
+ Port 22
+
+
 =======================
 PYTHON3.8
 # https://linuxize.com/post/how-to-install-python-3-8-on-debian-10/
