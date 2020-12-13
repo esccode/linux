@@ -1,6 +1,11 @@
-#rozpakowanie z archiwizowanych plikow
+# rozpakowanie z archiwizowanych plikow
 
 tar zxvf <plik>
+	
+# dodawanie uzytkownika
+sudo adduser username
+cd root/
+sudo adduser username sudo
 
 # data utworzenia pliku
 stat <plik>
