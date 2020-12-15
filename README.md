@@ -11,11 +11,21 @@ sudo adduser username sudo
 stat <plik>
 man iptables (pokazuje dokumentacje dla dowolnego polecenia)
 
-#iptables -F (wyłańczamy wpisy)
+# iptables - tablica filter
 
-#iptables -L (pokazuje wpisy)
+-A dodanie reguły
+$ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+$ sudo iptables -A OUTPUT -p tcp --dport 80 -j REJECT
 
+-A dodanie reguły
+-p protokół(tcp, icmp, udp)
+--dport port docelowy
+-j co zrobić z pakietem(DROP, REJECT, ACCEPT, LOG)
 
+iptables -F (wyłańczamy wpisy)
+iptables -L (pokazuje wpisy)
+
+=======================================
 Pobieramy skrypt w linuxie na pow�oce systemowej (ang. shell
 
 wget --no-check-certificate http://keca13.vot.pl/algo/skrypt/sciagnij.
