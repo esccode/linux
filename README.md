@@ -16,7 +16,7 @@ man iptables (pokazuje dokumentacje dla dowolnego polecenia)
 -A dodanie reguły
 $ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 $ sudo iptables -A OUTPUT -p tcp --dport 80 -j REJECT
-
+$ sudo iptables -A INPUT -s 192.168.x.x -j DROP
 -A dodanie reguły
 -p protokół(tcp, icmp, udp)
 --dport port docelowy
