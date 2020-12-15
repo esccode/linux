@@ -23,7 +23,10 @@ $ sudo iptables -A INPUT -s 192.168.x.x -j DROP
 -j co zrobić z pakietem(DROP, REJECT, ACCEPT, LOG)
 
 iptables -F (wyłańczamy wpisy)
-iptables -L (pokazuje wpisy)
+iptables -L -n -v (pokazuje wpisy)
+sudo iptables-save>reguly
+sudo iptables-restore<reguly
+
 
 =======================================
 Pobieramy skrypt w linuxie na pow�oce systemowej (ang. shell
