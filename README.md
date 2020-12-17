@@ -29,6 +29,10 @@ sudo iptables-restore<reguly
 ## zablokuje cały ruch
 sudo iptables -P INPUT DROP
 
+## odblokowanie np logowania sie po ssh 
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+## blokowanie połączen wychodzacych takze SSH ze wzgledu na TCP
+sudo iptables -P OUTPUT DROP
 
 =======================================
 Pobieramy skrypt w linuxie na pow�oce systemowej (ang. shell
