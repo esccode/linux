@@ -34,6 +34,9 @@ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ## blokowanie połączen wychodzacych takze SSH ze wzgledu na TCP
 sudo iptables -P OUTPUT DROP
 
+##
+sudo iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT
+
 =======================================
 Pobieramy skrypt w linuxie na pow�oce systemowej (ang. shell
 
