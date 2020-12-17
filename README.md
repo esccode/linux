@@ -26,6 +26,8 @@ iptables -F (wyłańczamy wpisy)
 iptables -L -n -v (pokazuje wpisy)
 sudo iptables-save>reguly
 sudo iptables-restore<reguly
+## zablokuje cały ruch
+sudo iptables -P INPUT DROP
 
 
 =======================================
@@ -128,7 +130,9 @@ scp root@10.X.0.X:/home/sample.txt /home/sample.txt
 ssh root@192.168.188.x -p 2123
 ssh root@192.168.188.x
 ssh login@host "df -h; ls -la"
-cat ~/.ssh/MY_PUBLIC_KEY.pub | ssh <user>@<hostname> 'cat >> ~/.ssh/authorized_keys'
+cat ~/.ssh/id_rsa.pub | ssh <user>@<hostname> -p <port> 'cat >> ~/.ssh/authorized_keys'
+echo 'eeeeeeeeee'>ddd.txt;cat ddd.txt | ssh login@192.168.x.x -p <port> 'cat >> ~/.ssh/ddd.txt'
+echo 'eeeeeeeeee'>ddd.txt;cat ddd.txt | ssh login@192.168.x.x 'cat >> ~/.ssh/ddd.txt'
 	
 ps -ef | grep ssh
 sudo netstat -nlp | grep ssh
