@@ -17,10 +17,11 @@ man iptables (pokazuje dokumentacje dla dowolnego polecenia)
 $ sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 $ sudo iptables -A OUTPUT -p tcp --dport 80 -j REJECT
 $ sudo iptables -A INPUT -s 192.168.x.x -j DROP
--A dodanie reguły
--p protokół(tcp, icmp, udp)
---dport port docelowy
--j co zrobić z pakietem(DROP, REJECT, ACCEPT, LOG)
+-A  dodanie reguły
+-p  protokół(tcp, icmp, udp)
+--dport  port docelowy
+--sport  port zrodlowy
+-j  co zrobić z pakietem(DROP, REJECT, ACCEPT, LOG)
 
 iptables -F (wyłańczamy wpisy)
 iptables -L -n -v (pokazuje wpisy)
@@ -31,10 +32,11 @@ sudo iptables -P INPUT DROP
 
 ## odblokowanie np logowania sie po ssh 
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
 ## blokowanie połączen wychodzacych takze SSH ze wzgledu na TCP
 sudo iptables -P OUTPUT DROP
 
-##
+## odblokuje polaczenia wychodzace dla protokulu tcp, port 22
 sudo iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT
 
 =======================================
