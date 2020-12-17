@@ -125,7 +125,7 @@ scp root@10.X.0.X:/home/sample.txt /home/sample.txt
 
 # ssh logowanie
 
-ssh ssh root@192.168.188.x -p 2123
+ssh root@192.168.188.x -p 2123
 ssh root@192.168.188.x
 ssh login@host "df -h; ls -la"
 cat ~/.ssh/MY_PUBLIC_KEY.pub | ssh <user>@<hostname> 'cat >> ~/.ssh/authorized_keys'
