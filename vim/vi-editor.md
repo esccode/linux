@@ -1,17 +1,17 @@
-#tmux
+# tmux
 sudo apt-get install tmux
 
-##wchodzimy
+## wchodzimy
 tmus
 
-##podwojne okno
+## podwojne okno
 Ctrl+B
 %
 exit
 Ctrl <
 Ctrl >
 
-##podglad zmian w pliku
+## podglad zmian w pliku
 watch cat plik.sh
 
 ======================
@@ -21,47 +21,47 @@ watch cat plik.sh
 esc
 
 
-##dzielenie pliku
+## dzielenie pliku
 :split ./plik
 :vsplit ./plik
-##przeskakiwanie
+## przeskakiwanie
 Ctrl ww
 
 
-##nowe zakladki
+## nowe zakladki
 :tabnew ./plik
-##przeskakiwanie miedzy zakladkami
+## przeskakiwanie miedzy zakladkami
 gt
 :tabnext
 :tabprev
 :tabn
 
-##przechodzenie do lini ostatniej zmiany
+## przechodzenie do lini ostatniej zmiany
 '.
 
-#historia komend w vim normal mode
+# historia komend w vim normal mode
 :jumps
 
-##tryb normal
+## tryb normal
 : ! command
 
-##wstawianie wyniku ploecenia do pliku
+## wstawianie wyniku ploecenia do pliku
 :r ! command
 
-##cofanie zmain w trybie normal 
+## cofanie zmain w trybie normal 
 u
 
 
-##aby przejsc do pierwszej lini w dokumencie
+## aby przejsc do pierwszej lini w dokumencie
 gg
 ## aby przejsci do ostatniej lini w dokumencie
 G
 ## aby przejsc do 5 lini w dokumencie
 5G
 
-##tryb myszki / visual
+## tryb myszki / visual
 :set mouse=a
-##wylanczamy myszke
+## wylanczamy myszke
 :set mouse=
 ## tryb visual clock
 Ctrl V
@@ -72,25 +72,28 @@ shift R
 ## wciecia
 shift >> or shift <<
 
-##numerowanie wierszy
+## numerowanie wierszy
 :set number
 :set nonumber
 
-/szukane_slowo
+## /szukane_slowo
 n - przechodzimy do nastepnego slowa wyszukanego
 shift n - powracamy do poprzedniego wyszukanego slowa
 
-##kopiowanie i wklejanie  normal mode
+## kopiowanie i wklejanie  normal mode
 y - kopiowanie
 p - wklejanie
 
-##usuwanie textu w trybie normal
+## usuwanie textu w trybie normal
 x
-3dd##kasuje 3 linie
+## kasuje 3 linie
+3dd
 
+## zapisywanie, wyjscie, wyjscie bez zapisu
 :w;:wq;:q!;:e
-##szukanie brakujacych nawiasów
+## szukanie brakujacych nawiasów
 Shift %
+
 
 =======================
 Vim Cheat Sheet
