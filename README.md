@@ -135,6 +135,15 @@ scp debian-10.3.0-amd64-DVD-1.iso root@X.X.X.X:/var/lib/vz/template/iso/
 scp root@10.X.0.X:/home/sample.txt /home/sample.txt
 
 # ssh logowanie
+sudo service ssh status
+
+OR
+
+sudo systemctl status ssh.service
+sudo systemctl enable ssh.service
+sudo systemctl start ssh.service
+sudo systemctl status ssh.service
+
 
 ssh root@192.168.188.x -p 2123
 ssh root@192.168.188.x
