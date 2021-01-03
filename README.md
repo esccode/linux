@@ -17,6 +17,12 @@ ufw delete allow ssh
 
 cat /etc/services | grep ssh
 
+# apache2
+sudo apt install apache2
+ps -ef | grep telnet
+sudo netstat -nlp | grep 80
+
+
 
 # rozpakowanie z archiwizowanych plikow
 
