@@ -1,3 +1,20 @@
+# ufw Uncomplicated Firewall(domyslnie wyłączona w ubuntu)
+
+man ufw
+sudo ufw status/enable/disable
+sudo ufw status verbose
+cat /etc/ufw/ufw.conf
+ufw default deny incoming
+ufw default allow outgoing
+ufw default allow 5876
+ufw default deny 5876
+ufw default delete deny 5876
+ufw allow ssh
+ufw delete allow ssh
+
+cat /etc/services | grep ssh
+
+
 # rozpakowanie z archiwizowanych plikow
 
 tar zxvf <plik>
