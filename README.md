@@ -1,19 +1,33 @@
 # find i grep
+## find
 sudo find /etc -name vimrc
 sudo find /etc -name vimrc -type f
 sudo find /etc -name vimrc -type d
 find ~ -name ".bash*"
 find ~ -name ".bash*" | xargs ls -la
 find ~ -executable
-
-## szuka pliki które były modyfikowane conajmniej 7 dni temu albo powyzej albo dzis
+### szuka pliki które były modyfikowane conajmniej 7 dni temu albo powyzej albo dzis
 sudo find /etc/ -type f -mtime -7
 sudo find /etc/ -type f -mtime +7
 sudo find /etc/ -type f -mtime 0
-
-
 ### wyszukuje dane słowo w poleceniu: man find
 /type
+
+## grep
+ps -ef | grep sshd
+
+### pszeszukujemy pliki binarne grep -a
+sudo grep -a szukaneslowo /var/log/auth.log
+sudo cat /var/log/auth.log | grep -a szukaneslowo
+
+### archiwizujemy plik
+cp /var/log/auth.log .
+gzip auth.log
+ls -lah auth.log.gz
+
+#### przeszukiwanie archiwum
+zgrep -a ubuntu auth.log.gz
+
 
 
 
