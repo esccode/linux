@@ -1,3 +1,5 @@
+# find i grep
+
 # fail2ban
 ## fail2ban wykorzystuje reguły iptables
 sudo add-apt-repository universe
@@ -8,6 +10,9 @@ cd /etc/fail2ban/
 ps -ef | grep fail2ban
 cp fail2ban.conf fail2ban.local
 cp jail.conf jail.local
+systemctl restart fail2ban
+
+sudo iptables -L -n -v
 
 
 # unattended upgrades
