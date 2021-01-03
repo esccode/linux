@@ -1,4 +1,14 @@
 # fail2ban
+## fail2ban wykorzystuje reguły iptables
+sudo add-apt-repository universe
+sudo apt install fail2ban
+systemctl status fail2ban
+cat /var/log/auth.log
+cd /etc/fail2ban/
+ps -ef | grep fail2ban
+cp fail2ban.conf fail2ban.local
+cp jail.conf jail.local
+
 
 # unattended upgrades
 sudo apt install unattended upgrades
