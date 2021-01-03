@@ -15,7 +15,8 @@ cat /etc/services | grep ssh
 ufw allow ssh
 ufw delete allow ssh
 
-cat /etc/services | grep ssh
+ufw allow 80:88/tcp
+
 
 # apache2
 sudo apt install apache2
