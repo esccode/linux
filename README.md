@@ -1,4 +1,10 @@
 # find i grep
+sudo find /etc -name vimrc
+sudo find /etc -name vimrc -type f
+sudo find /etc -name vimrc -type d
+man find
+### wyszukuje dane słowo w poleceniu man np. type
+/type
 
 # fail2ban
 ## fail2ban wykorzystuje reguły iptables
