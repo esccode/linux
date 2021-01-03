@@ -3,7 +3,7 @@ sudo find /etc -name vimrc
 sudo find /etc -name vimrc -type f
 sudo find /etc -name vimrc -type d
 man find
-### wyszukuje dane słowo w poleceniu man np. type
+### wyszukuje dane słowo w poleceniu: man find
 /type
 
 # fail2ban
