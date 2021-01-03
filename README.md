@@ -2,9 +2,19 @@
 sudo find /etc -name vimrc
 sudo find /etc -name vimrc -type f
 sudo find /etc -name vimrc -type d
-man find
+find ~ -name ".bash*"
+find ~ -name ".bash*" | xargs ls -la
+find ~ -executable
+
+## szuka pliki które były modyfikowane conajmniej 7 dni temu
+sudo find /etc/ -type f -mtime -7
+
+
 ### wyszukuje dane słowo w poleceniu: man find
 /type
+
+
+
 
 # fail2ban
 ## fail2ban wykorzystuje reguły iptables
