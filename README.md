@@ -6,8 +6,9 @@ find ~ -name ".bash*"
 find ~ -name ".bash*" | xargs ls -la
 find ~ -executable
 
-## szuka pliki które były modyfikowane conajmniej 7 dni temu
+## szuka pliki które były modyfikowane conajmniej 7 dni temu albo powyzej
 sudo find /etc/ -type f -mtime -7
+sudo find /etc/ -type f -mtime +7
 
 
 ### wyszukuje dane słowo w poleceniu: man find
