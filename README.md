@@ -1,3 +1,14 @@
+# fail2ban
+
+# unattended upgrades
+sudo apt install unattended upgrades
+sudo dpkg-reconfigure unattended-upgrades
+cat /etc/apt/apt.conf.d/20auto-upgrades
+vim /etc/apt/apt.conf.d/50unattended-upgrades
+cat /var/log/unattended-upgrades/unattended-upgrades.log
+sudo unattended-upgrade -v
+
+
 # ufw Uncomplicated Firewall(domyslnie wyłączona w ubuntu)
 
 man ufw
