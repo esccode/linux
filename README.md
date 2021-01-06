@@ -16,6 +16,10 @@ sudo find /etc/ -type f -mtime 0
 ## grep
 ps -ef | grep sshd
 
+## ls pokazuje tylko katalogi z opja kolorowania 
+ls -p --color | grep /
+
+
 ### pszeszukujemy pliki binarne grep -a
 sudo grep -a szukaneslowo /var/log/auth.log
 sudo cat /var/log/auth.log | grep -a szukaneslowo
