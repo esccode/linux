@@ -6,3 +6,9 @@ niedziela) echo “weekend się juz powoli konczy”;;
 poniedzialek) echo ”już poniedziałek znowu trzeba isc do pracy”;;
 *) echo „srodek tygodnia trzeba ciezko pracowac”;;
 esac 
+
+pause
+
+
+
+echo "jjjjjjjjjjjjj"
