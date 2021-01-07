@@ -1,11 +1,17 @@
 # find i grep
 ## find
 sudo find /etc -name vimrc
+
 sudo find /etc -name vimrc -type f
+
 sudo find /etc -name vimrc -type d
+
 find ~ -name ".bash*"
+
 find ~ -name ".bash*" | xargs ls -la
+
 find ~ -executable
+
 ### szuka pliki które były modyfikowane conajmniej 7 dni temu albo powyzej albo dzis
 sudo find /etc/ -type f -mtime -7
 sudo find /etc/ -type f -mtime +7
