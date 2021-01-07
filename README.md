@@ -1,11 +1,17 @@
 # find i grep
 ## find
 sudo find /etc -name vimrc
+
 sudo find /etc -name vimrc -type f
+
 sudo find /etc -name vimrc -type d
+
 find ~ -name ".bash*"
+
 find ~ -name ".bash*" | xargs ls -la
+
 find ~ -executable
+
 ### szuka pliki które były modyfikowane conajmniej 7 dni temu albo powyzej albo dzis
 sudo find /etc/ -type f -mtime -7
 sudo find /etc/ -type f -mtime +7
@@ -441,3 +447,19 @@ Lub:
 
 /sciezka/do/skryptu
 np.:  /etc/init.d/skrypt
+
+# SKRYPTY
+## dysk.sh
+#!/bin/bash
+
+prepare=`df -h | grep -vE '^Filesystem|tmpfs|udev' | sed -n '1p' | awk '{print $5 " " $1}'`
+echo $prepare
+
+partition=$(echo $prepare | awk '{print $2}')
+
+used=$(echo $prepare | awk '{print $1}' | cut -d'%' -f1)
+echo $used
+
+if [ "$used" -ge "10" ]; then
+     echo " Partycja: $partition uzywa $used% zajetosci dysku z datą: $(date)"
+fi
