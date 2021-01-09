@@ -24,15 +24,27 @@ function read_input(){
 }
 
 function system_info(){
-    echo "system_info"
+    echo "System Info"
+      LSB=/usr/bin/lsb_release
+    if [ -x "$LSB" ]; then
+        $LSB -a
+    else
+        echo "$LSB command is not installed" 
+    fi 
 }
 
 function host_info(){
-    echo "host_info"
+    echo "Host Info"
+    echo "Hostname: $(hostname -s)"
+    echo "DNS domain: $(hostname -d)"
+    echo "Full dns name: $(hostname -f)"
+    echo "IPs: $(hostname -I)"
+    
 }
 
 function disk_info(){
-    echo "disk_info"
+    echo "Disk Info"
+    df -H | grep -vE "^Filesystem|tmpfs|udev" | awk '{print $1 " " $2 " " $5 " " $6}'
 }
 
 show_menu
