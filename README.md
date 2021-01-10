@@ -1,3 +1,34 @@
+# timezone
+date
+sudo timedatectl set-timezone Europe/Warsaw
+
+
+# ssmtp
+sudo apt install ssmtp
+sudo nano /etc/ssmtp/ssmtp.conf
+
+mailhub=smtp.wp.pl:587
+rewriteDomain=wp.pl
+hostname=wp.pl
+FromLineOverride=YES
+UseTLS=YES
+UseSTARTTLS=YES
+AuthUser=user
+AuthPass=******
+
+cat mail.tmp
+To: JW
+From: keca13@wp.pl
+Subject: test Subject
+
+Test Boby0
+test Body1
+Sun Jan 10 21:25:50 UTC 2021
+
+sudo ssmtp email_to_send < mail.tmp
+
+
+
 # find i grep
 ## find
 sudo find /etc -name vimrc
