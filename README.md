@@ -18,7 +18,7 @@ AuthPass=******
 
 cat mail.tmp
 To: JW
-From: keca13@wp.pl
+From: email@wp.pl
 Subject: test Subject
 
 Test Boby0
