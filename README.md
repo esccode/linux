@@ -1,3 +1,9 @@
+# mysql
+apt search mysql-server
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.16-1_all.deb --no-check-certificate
+sudo dpkg -i mysql-apt-config_0.8.16-1_all.deb
+sudo apt install mysql-server
+
 # timezone
 date
 sudo timedatectl set-timezone Europe/Warsaw
