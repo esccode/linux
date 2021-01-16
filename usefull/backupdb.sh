@@ -1,7 +1,7 @@
 #!/bin/bash
 
-user="keca13"
-password="jack55"
+user="user"
+password="password"
 host="localhost"
 db_name="lab"
 
