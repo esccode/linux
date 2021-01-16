@@ -25,6 +25,8 @@ select user from mysql.user;
 ### give privileges to user
 grant all privileges on lab.* to 'user'@'localhost';
 
+## backup mysql
+
 # timezone
 date
 sudo timedatectl set-timezone Europe/Warsaw
