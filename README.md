@@ -26,6 +26,24 @@ select user from mysql.user;
 grant all privileges on lab.* to 'user'@'localhost';
 
 ## backup mysql
+sudo cp backupdb.sh /usr/local/sbin/backupdb.sh
+chmod +x /usr/local/sbin/backupdb.sh
+
+### ukrycie hasła z pliku /usr/local/sbin/backupdb.sh
+cd /root
+touch .my.cnf
+chmod 600 .my.cnf
+
+vim .my.cnf
+[mysqldump]
+user=user_db
+password='password_db'
+
+
+
+### add to crontab
+crontab -e
+
 
 # timezone
 date
