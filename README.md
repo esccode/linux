@@ -1,8 +1,29 @@
 # mysql
-apt search mysql-server
+sudo apt search mysql-server
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.16-1_all.deb --no-check-certificate
 sudo dpkg -i mysql-apt-config_0.8.16-1_all.deb
+sudo apt update
 sudo apt install mysql-server
+## wprowadzenie podstawowych zabezpieczen
+sudo mysql_secure_installation
+
+## sprawdzenie usługi
+sudo systemctl status mysql.service
+ps -ef | grep mysql
+sudo netstat -nlp | grep mysql
+
+## log in
+sudo mysql -u root -p
+show datebases;
+create database lab;
+use lab;
+show tables;
+create user 'user'@'localhost' identified by 'password';
+show variables like 'validate_password.%';
+select user from mysql.user;
+
+### give privileges to user
+grant all privileges on lab.* to 'user'@'localhost';
 
 # timezone
 date
