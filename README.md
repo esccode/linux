@@ -1,3 +1,11 @@
+# mongoDB nie relacyjna baza danych
+sudo apt update
+sudo apt upgrade
+curl -s https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+echo "deb [ arch=arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+sudo apt update
+
+
 # mysql relacyjna baza danych
 sudo apt search mysql-server
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.16-1_all.deb --no-check-certificate
