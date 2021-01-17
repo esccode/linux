@@ -51,6 +51,7 @@ password='password_db'
 
 ### add to crontab
 crontab -e
+sudo /etc/init.d/cron status
 
 
 # timezone
