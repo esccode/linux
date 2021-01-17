@@ -12,6 +12,7 @@ date=$(date +"%d-%b-%Y")
 
 #pliki ktore beda mialy uprawnienia chmod 600
 #tylko dla wlasciciela pliku
+#polecenie interfejsu POSIX, które odpowiada za ograniczanie praw dostępu do plików
 umask 177
 
 #mysqldump --user=$user --password=$password --host=$host $db_name > $backup_path/$db_name-$date
