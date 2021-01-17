@@ -3,10 +3,11 @@
 user="user"
 password="password"
 host="localhost"
-db_name="lab"
+db_name="baza"
 
 backup_path="/var/lib/mysql/backup"
 date=$(date +"%d-%b-%Y")
+#date=$(date +"%d-%b-%Y--%H:%M")
 
 
 #pliki ktore beda mialy uprawnienia chmod 600
