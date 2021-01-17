@@ -13,5 +13,8 @@ date=$(date +"%d-%b-%Y")
 #tylko dla wlasciciela pliku
 umask 177
 
-mysqldump --user=$user --password=$password --host=$host $db_name > $backup_path/$db_name-$date
+#mysqldump --user=$user --password=$password --host=$host $db_name > $backup_path/$db_name-$date
+#using file my.cnf in root directory can evoid showing login password
+
+mysqldump --host=$host $db_name > $backup_path/$db_name-$date
 find $backup_path/* -mtime +7 -exec rm {} \;
