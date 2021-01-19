@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # openssl
 openssl version
 ## update
