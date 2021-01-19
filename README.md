@@ -1,3 +1,16 @@
+# openssl
+openssl version
+## update
+cd /usr/src
+wget https://*openssl*.tar.gz
+gunzip < *openssl*.tar.gz | tar zvf -
+cd *openssl*
+./config --prefix=/usr/local/ssl  
+make -j 2 
+make test
+make install
+
+
 # find i grep
 ## find
 sudo find /etc -name vimrc
