@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # openssl
 openssl version
 ## update
@@ -9,6 +10,93 @@ cd *openssl*
 make -j 2 
 make test
 make install
+=======
+# mongoDB nie relacyjna baza danych
+sudo apt update
+sudo apt upgrade
+curl -s https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+echo "deb [ arch=arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+sudo apt update
+
+
+# mysql relacyjna baza danych
+sudo apt search mysql-server
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.16-1_all.deb --no-check-certificate
+sudo dpkg -i mysql-apt-config_0.8.16-1_all.deb
+sudo apt update
+sudo apt install mysql-server
+## wprowadzenie podstawowych zabezpieczen
+sudo mysql_secure_installation
+
+## sprawdzenie usługi
+sudo systemctl status mysql.service
+ps -ef | grep mysql
+sudo netstat -nlp | grep mysql
+
+## log in
+sudo mysql -u root -p
+show datebases;
+create database lab;
+use lab;
+show tables;
+create user 'user'@'localhost' identified by 'password';
+show variables like 'validate_password.%';
+select user from mysql.user;
+
+### give privileges to user
+grant all privileges on lab.* to 'user'@'localhost';
+
+## backup mysql
+sudo cp backupdb.sh /usr/local/sbin/backupdb.sh
+chmod +x /usr/local/sbin/backupdb.sh
+
+### ukrycie hasła z pliku /usr/local/sbin/backupdb.sh
+cd /root
+touch .my.cnf
+chmod 600 .my.cnf
+
+vim .my.cnf
+[mysqldump]
+user=user_db
+password='password_db'
+
+
+
+### add to crontab
+crontab -e
+sudo /etc/init.d/cron status
+
+
+# timezone
+date
+sudo timedatectl set-timezone Europe/Warsaw
+
+
+# ssmtp
+sudo apt install ssmtp
+sudo nano /etc/ssmtp/ssmtp.conf
+
+mailhub=smtp.wp.pl:587
+rewriteDomain=wp.pl
+hostname=wp.pl
+FromLineOverride=YES
+UseTLS=YES
+UseSTARTTLS=YES
+AuthUser=user
+AuthPass=******
+
+cat mail.tmp
+To: JW
+From: email@wp.pl
+Subject: test Subject
+
+Test Boby0
+test Body1
+Sun Jan 10 21:25:50 UTC 2021
+
+sudo ssmtp email_to_send < mail.tmp
+
+>>>>>>> f232edc274018672d954110f387c4937f67c1275
 
 
 # find i grep
