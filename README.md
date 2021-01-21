@@ -101,6 +101,7 @@ sudo ssmtp email_to_send < mail.tmp
 
 # find i grep
 ## find
+sudo find / -name crontab
 sudo find /etc -name vimrc
 
 sudo find /etc -name vimrc -type f
