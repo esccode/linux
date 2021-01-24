@@ -2,8 +2,8 @@
 #nazwa pliku write_to_db.sh
 #opis: odczytuje plik CSV i dokonuje zapisu w bazie danych MySQL
 
-#USER="keca13"
-#PASS="jack55"
+#USER="user"
+#PASS="password"
 echo  liczba argumentow $#
 echo plik $@
 if [ $# -ne 1 ]; then
