@@ -1,4 +1,37 @@
+# Podstawy instalacji paczek rpm i deb z linii komend w Linuksie.
 
+## Pakiety RPM
+
+### Aby zainstalować pakiet rpm, wpisujemy:
+
+rpm -ivh nazwapakietu.rpm #Parametry v i h opcjonalnie
+#### Parametry:
+-i - Instaluje pakiet
+-v - Wypisuje nazwę instalowanego pakietu
+-h - Wyświetla postęp instalacji
+
+### Aby zaktualizować pakiet wpiszemy:
+
+rpm -uvh nazwapakietu.rpm #Parametry v i h opcjonalnie
+###### Parametr „u” usuwa poprzednią wersję programu i instaluje tę, którą mu podaliśmy.
+
+### Aby odinstalować pakiet rpm wpisujemy:
+
+rpm -e nazwapakietu.rpm
+
+## Pakiety DEB
+
+### Aby zainstalować pakiet DEB wpisujemy w konsoli (lub emulatorze):
+
+dpkg -i nazwapakietu.deb
+### Żeby usunąć program, musimy wpisać:
+
+dpkg -r nazwapakietu.deb
+
+# loop for
+(for k in *.txt; do wc -c "$k"; done) | sort -n
+
+# rpm
 # openssl
 openssl version
 ## update
