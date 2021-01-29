@@ -1,4 +1,4 @@
-# unpacking files,
+# unpacking files and install package
 ## Dla plików tar:
 tar –xvf plik.tar
 ## Dla plików tar.gz:
