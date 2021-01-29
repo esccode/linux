@@ -5,6 +5,14 @@ tar –xvf plik.tar
 tar –xvzf plik.tar.gz
 ## Dla plików tar.bz2:
 tar –xvjf plik.tar.bz2 
+## po dekompresji wchodzimy do katalogu
+cd plik
+./configure
+make install
+
+## odinstalowanie
+make uninstall
+make clean
 
 
 # Podstawy instalacji paczek rpm i deb z linii komend w Linuksie.
