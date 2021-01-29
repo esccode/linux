@@ -1,3 +1,12 @@
+# unpacking files,
+## Dla plików tar:
+tar –xvf plik.tar
+## Dla plików tar.gz:
+tar –xvzf plik.tar.gz
+## Dla plików tar.bz2:
+tar –xvjf plik.tar.bz2 
+
+
 # Podstawy instalacji paczek rpm i deb z linii komend w Linuksie.
 
 ## Pakiety RPM
