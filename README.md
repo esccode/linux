@@ -309,7 +309,7 @@ http://www.traceroute.org/
 wyłaczamy wpisy IPTABLES na: /etc/init.d/skrypt
 
 =====================
-man awk
+man 
 
 #$2 druga kolumna #',' seoarator kolumny
 
@@ -590,7 +590,7 @@ A jak byscie chcieli wylaczyc skrypt to wystarczy skorzystac z polecenia:
 
 #/etc/rc.local
 powyzej,jest to plik przetwarzany przy kazdym starcie systemu 
-– mo¿emy tu dodaæ polecenie lub œcie¿kê do skryptu 
+– mozemy tu dodane polecenie lub sciezkê do skryptu 
 który ma siê wykonaæ podczas startu systemu.
 Zasada jest banalna – po prostu przed linijk¹ „exit 0” dodajemy np.:
 
