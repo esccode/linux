@@ -379,8 +379,9 @@ $ scp .\vvv.txt ubuntu@192.168.x.x:/home/ubuntu | ssh ubuntu@192.168.x.x ls
 
 scp debian-10.3.0-amd64-DVD-1.iso root@X.X.X.X:/var/lib/vz/template/iso/
 
-#Kopiowanie pliku ze zdalnej lokalizacji na lokalny dysk
+# Kopiowanie pliku ze zdalnej lokalizacji na lokalny dysk
 scp root@10.X.0.X:/home/sample.txt /home/sample.txt
+
 
 # ssh logowanie
 sudo service ssh status
@@ -437,6 +438,10 @@ echo "TU_WSTAW_KLUCZ_PUBLICZNY" >> .ssh/authorized_keys
 
 ## logowanie sie przy uzyciu klucza
 ssh -i .\centreon_key root@192.168.x.x
+
+## komendy na zdalnym serwerze przy uzyciu klucza
+ssh -i /mnt/test1.pem username@remote_host "/bin/ls -l"
+
 
 # sprawdzamy czy serwer ssh jest uruchomiony oraz port
 
