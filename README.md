@@ -409,11 +409,34 @@ ssh-keygen
 scp ~/.ssh/id_rsa.pub ubuntu@192.168.188.x:~/.ssh
 
 ssh ubuntu@192.168.188.x
+
 cd .ssh/
+
 mv id_rsa.pub authorized_keys
+
 cd ..
+
 chmod 700 .ssh
+
 chmod 600 .ssh/authorized_keys
+
+## przesyłanie klucza publicznego na serwer 
+
+cat ~/.ssh/server1_key.pub | ssh user@192.168.100.1 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >>  ~/.ssh/authorized_keys"
+
+### albo recznie na serwerze na który sie logujemy
+mkdir .ssh;
+
+chmod 700 .ssh;
+
+touch .ssh/authorized_keys
+
+chmod 600 .ssh/authorized_keys
+
+echo "TU_WSTAW_KLUCZ_PUBLICZNY" >> .ssh/authorized_keys
+
+## logowanie sie przy uzyciu klucza
+ssh -i .\centreon_key root@192.168.x.x
 
 # sprawdzamy czy serwer ssh jest uruchomiony oraz port
 
@@ -423,7 +446,7 @@ Port 5876
 PermitRootLogin no
 sude service ssh restart
 
-# tworzenei aliasu do logowania sie
+# tworzenie aliasu do logowania sie
 # w katalogu urzytkownika tworzymy
 notepad.exe ~/.ssh/config
 
