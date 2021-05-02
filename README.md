@@ -405,11 +405,12 @@ ps -ef | grep ssh
 sudo netstat -nlp | grep ssh
 
 # tworzenie pary kluczy dla ssh
+## https://lepczynski.it/inne/logowanie-ssh-bez-hasla-jak-uzywac-kluczy/
 
 ssh-keygen
-scp ~/.ssh/id_rsa.pub ubuntu@192.168.188.x:~/.ssh
+scp ~/.ssh/id_rsa.pub user@192.168.x.x:~/.ssh
 
-ssh ubuntu@192.168.188.x
+ssh user@192.168.x.x
 
 cd .ssh/
 
@@ -445,14 +446,13 @@ ssh -i /mnt/test1.pem username@remote_host "/bin/ls -l"
 
 # sprawdzamy czy serwer ssh jest uruchomiony oraz port
 
-# ustawianie portu do ssh
+## ustawianie portu do ssh
 sudo vim /etc/ssh/sshd_config
 Port 5876
 PermitRootLogin no
 sude service ssh restart
 
-# tworzenie aliasu do logowania sie
-# w katalogu urzytkownika tworzymy
+## tworzenie aliasu do logowania sie po ssh w pliku confug
 notepad.exe ~/.ssh/config
 
 Host alias
