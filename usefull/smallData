@@ -1,0 +1,13 @@
+####example#####
+#bash smallData Ala
+
+#wyszukiwanie wierszy
+#
+grep $1 <<EOF
+Michał x.123
+Jan x.234
+Ala x.555
+Piotr x.818
+Ania x.822
+Bartek x.919
+EOF
