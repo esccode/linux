@@ -36,7 +36,7 @@
 centreon -u admin -p centreon -o HOST -a show
 cat cmdb_ci_server.csv| sed 's/\"//g'| cut -d "," -f 1-4|while read i;do echo ${i};done
 
-##
+## import hosts from file
 LOG=$(date +%d%m%y_%H%M%S);cat ci_server.csv| sed 's/\"//g'| cut -d "," -f 1-4 | sed 1d |while read -r i; do IFS=',';line=(${i}); col0=${line[0]};col1=${line[1]};col2=${line[2]};col3=${line[3]};
     centreon -u admin -p centreon -o HOST -a ADD -v "${col0};;${col1};;Central;${col3}" >> add_host_$LOG
 	centreon -u admin -p centreon -o HOST -a addcontact -v "${col0};user" >> add_host_$LOG;
