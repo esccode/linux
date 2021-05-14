@@ -53,11 +53,13 @@ LOG=$(date +%d%m%y_%H%M%S);cat ci_server.csv| sed 's/\"//g'| cut -d "," -f 1-4 |
 
 ####### IMPORT export clapi  ###########
 ####Example with "nameObject_service" service template name and 'nameObject_host_template' for template name
-centreon -u admin -p PASSWORD -e |grep ie nameObject_service | egrep '^HTPL|^STPL|^CMD' > nameObject_service.clapi
+centreon -u admin -p PASSWORD -e |grep -i nameObject_service | egrep '^HTPL|^STPL|^CMD' > nameObject_service.clapi.txt
 
-After that, you'll be able to import these /host/service template and command to another Centreon:
+sed -i 's/DISK7/DISK8/g' nameObject_service.clapi>cat nameObject_service.clap
 
-centreon -u admin -p PASSWORD -i nameObject.clapi
+#After that, you'll be able to import these /host/service template and command to another Centreon:
+
+centreon -u admin -p PASSWORD -i nameObject.clapi.txt
 
 
 
