@@ -47,7 +47,7 @@ LOG=$(date +%d%m%y_%H%M%S);cat ci_server.csv| sed 's/\"//g'| cut -d "," -f 1-4 |
 	centreon -u admin -p centreon -o HOST -a setparam -v "${col0};notification_interval;60" >> add_host_$LOG;
 	centreon -u admin -p centreon -o HOST -a setparam -v "${col0};host_notification_options;d,u,r" >> add_host_$LOG; done
 
-###########tempalte########
+###########template########
 #centreon -u admin -p centreon -o HOST -a ADD -v "test;Test host;127.0.0.1;generic-host;central;Linux"
 
 
@@ -55,11 +55,15 @@ LOG=$(date +%d%m%y_%H%M%S);cat ci_server.csv| sed 's/\"//g'| cut -d "," -f 1-4 |
 ####Example with "nameObject_service" service template name and 'nameObject_host_template' for template name
 centreon -u admin -p PASSWORD -e |grep -i nameObject_service | egrep '^HTPL|^STPL|^CMD' > nameObject_service.clapi.txt
 
+## export host
+centreon -u admin -p centreon -e |grep -i ubuntu | egrep '^HOST|^HTPL|^STPL|^CMD'|cat -n
+centreon -u admin -p centreon -e |grep -i ubuntu | egrep '^HOST|^HTPL|^STPL|^CMD'> ubuntu.clapi.txt
+
 ## chaneg value DISK7 to DISK8
 sed -i 's/DISK7/DISK8/g' nameObject_service.clapi>cat nameObject_service.clap;cat nameObject_service.clap
 
 ##After that, you'll be able to import these /host/service template and command to another Centreon:
-
+## import Object
 centreon -u admin -p PASSWORD -i nameObject.clapi.txt
 
 
