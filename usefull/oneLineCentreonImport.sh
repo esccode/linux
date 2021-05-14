@@ -56,7 +56,7 @@ LOG=$(date +%d%m%y_%H%M%S);cat ci_server.csv| sed 's/\"//g'| cut -d "," -f 1-4 |
 centreon -u admin -p PASSWORD -e |grep -i nameObject_service | egrep '^HTPL|^STPL|^CMD' > nameObject_service.clapi.txt
 
 ## chaneg value DISK7 to DISK8
-sed -i 's/DISK7/DISK8/g' nameObject_service.clapi>cat nameObject_service.clap
+sed -i 's/DISK7/DISK8/g' nameObject_service.clapi>cat nameObject_service.clap;cat nameObject_service.clap
 
 ##After that, you'll be able to import these /host/service template and command to another Centreon:
 
