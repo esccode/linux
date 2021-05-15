@@ -1,3 +1,8 @@
+# tar archiwizowanie pliku
+tar cf nazwa_archiwum.tar katalog_plików
+## kompresja poliku archiwizowanego
+gzip nazwa_archiwum.tar
+
 # unpacking files and install package
 ## Dla plików tar:
 tar –xvf plik.tar
@@ -13,6 +18,8 @@ make install
 ## odinstalowanie
 make uninstall
 make clean
+
+
 
 
 # Podstawy instalacji paczek rpm i deb z linii komend w Linuksie.
