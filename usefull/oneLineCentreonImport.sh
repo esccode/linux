@@ -51,7 +51,7 @@ LOG=$(date +%d%m%y_%H%M%S);cat ci_server.csv| sed 's/\"//g'| cut -d "," -f 1-4 |
 #centreon -u admin -p centreon -o HOST -a ADD -v "test;Test host;127.0.0.1;generic-host;central;Linux"
 
 
-# IMPORT export clapi  ###########
+# IMPORT/EXPORT ^HOST|^HTPL|^STPL|^CMD  
 ####Example with "nameObject_service" service template name and 'nameObject_host_template' for template name
 centreon -u admin -p PASSWORD -e |grep -i nameObject_service | egrep '^HTPL|^STPL|^CMD' > nameObject_service.clapi.txt
 
@@ -66,6 +66,17 @@ sed -i 's/DISK7/DISK8/g' nameObject_service.clapi>cat nameObject_service.clap;ca
 ## import Object
 centreon -u admin -p PASSWORD -i nameObject.clapi.txt
 
+
+# IMPORT/EXPORT SERVICE by Host
+## export serwisu
+centreon -u admin -p centreon -e |grep -i DISK_Linux|grep ubuntu
+centreon -u admin -p centreon -e |grep -i DISK_Linux|grep ubuntu>DISK_Linux.clapi.txt
+
+## podmiana nazwy serwisu
+sed -i 's/DISK_Linux/DISK_Linux2/g' DISK_Linux.clapi.txt
+
+## import servisu
+centreon -u admin -p centreon -i DISK_Linux.clapi.txt
 
 
 ##### IMPORT Object ##############
