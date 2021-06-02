@@ -1,3 +1,40 @@
+# fdisk, lvm
+##  particioning create
+df -Th
+fdisk -l
+fdisk /dev/sdb
+fdisk /dev/sdc
+fdisk -l
+df -Th
+
+## Zainicjowanie fizycznych partycji do używania LVM:
+pvcreate /dev/sdb1
+pvcreate /dev/sdc1
+fdisk -l
+
+## Tworzenie grupy wolumenu:
+vgcreate centreon /dev/sdc1
+vgcreate centreon_db /dev/sdb1
+
+## Tworzenie logicznego wolumenu w grupie wolumenu:
+lvcreate
+lvcreate --help
+lvcreate -l 100%FREE
+lvcreate --help
+lvcreate -l 100%FREE -n centreon centreon
+lvcreate -l 100%FREE -n centreon_db centreon_db
+
+## Tworzenie systemu pików na logicznym wolumenie:
+mkfs.ext4 /dev/
+mkfs.ext4 /dev/centreon/centreon
+mkfs.ext4 /dev/centreon_db/centreon_db
+
+## sprawdzenie gdzie dane urzadzenia sa zamontowane
+cat /etc/fstab
+
+## montuje my wszystko co jest ujete w /etc/fstab
+mount -a
+
 # tar archiwizowanie pliku
 tar cf nazwa_archiwum.tar katalog_plików
 ## kompresja poliku archiwizowanego
